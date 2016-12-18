@@ -17,7 +17,7 @@ class EventArrayAdapter(context: Context, events: List<Event>) :
         var template : View =
                 convertView ?:
                         LayoutInflater.from(context).inflate(R.layout.event_item, parent, false)
-        template.ID.text = "#${event._id}"
+        template.ID.text = event._id
         template.name.text = event.name
         template.description.text = event.description
         return template

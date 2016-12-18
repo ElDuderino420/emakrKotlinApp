@@ -14,9 +14,9 @@ class EventsActivity : AppCompatActivity() {
 
     companion object {
         var events = mutableListOf(
-                Event(1, "Event 1", "This is our first event!"),
-                Event(2, "Event 2", "Our second event"),
-                Event(3, "Event 3", "A third one")
+                Event("1", "Event 1", "This is our first event!"),
+                Event("2", "Event 2", "Our second event"),
+                Event("3", "Event 3", "A third one")
         )
 
     }

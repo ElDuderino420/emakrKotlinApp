@@ -5,13 +5,13 @@ import java.util.*
 
 data class Event(
         val map: MutableMap<String, Any?>) : Serializable {
-    var _id: Int by map
+    var _id: String by map
     var name: String by map
     var description: String by map
 
 
     constructor(
-            id: Int,
+            id: String,
             name: String,
             description: String
     ) : this(HashMap()){

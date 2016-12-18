@@ -25,7 +25,7 @@ class EventActivity : AppCompatActivity() {
 
     override fun finish() {
         val event = Event(
-            eventId.text.toString().toInt(),
+            eventId.text.toString(),
             eventName.text.toString(),
             eventDescription.text.toString()
         )
