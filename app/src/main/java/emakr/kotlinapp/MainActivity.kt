@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_events.*
 import org.jetbrains.anko.async
 import org.jetbrains.anko.uiThread
 
@@ -44,6 +45,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navigationView = findViewById(R.id.nav_view) as NavigationView
         navigationView.setNavigationItemSelectedListener(this)
+    }
+
+    fun okButtonClicked(view: View){
+        toast("Fetching Events")
+        async() {
+            EventRequest().run()
+            uiThread { toast("... done") }
+        }
     }
 
     override fun onBackPressed() {

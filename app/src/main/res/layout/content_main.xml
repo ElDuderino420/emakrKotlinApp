@@ -17,4 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to emakr!" />
+
+    <Button
+        android:onClick="okButtonClicked"
+        android:text="@string/fetchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -17,12 +17,5 @@
 
     </ListView>
 
-    <Button
-        android:onClick="okButtonClicked"
-        android:text="@string/okButtonText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

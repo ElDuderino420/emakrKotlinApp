@@ -43,15 +43,6 @@ class EventsActivity : AppCompatActivity() {
         }
     }
 
-    fun okButtonClicked(view: View){
-        eventList.adapter = EventArrayAdapter(this, events)
-        toast("Fetching Events")
-        async() {
-            EventRequest().run()
-            uiThread { toast("... done") }
-        }
-    }
-
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

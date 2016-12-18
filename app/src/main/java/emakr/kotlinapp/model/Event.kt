@@ -9,6 +9,7 @@ data class Event(
     var name: String by map
     var description: String by map
 
+
     constructor(
             id: Int,
             name: String,
